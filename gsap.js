@@ -22,7 +22,7 @@ document.addEventListener('DOMContentLoaded', () => {
       e.stopPropagation();
       menuOpen = !menuOpen;
       hamburguer.classList.toggle('active');
-      if (window.innerWidth <= 768)  logo.style.color = menuOpen ? 'black' : 'white';
+      if (window.innerWidth <= 768) logo.style.color = menuOpen ? 'black' : 'white';
 
       if (menuOpen) {
         gsap.to(navMenu, {
@@ -49,7 +49,7 @@ document.addEventListener('DOMContentLoaded', () => {
     if (!navMenu.contains(e.target) && !hamburguer.contains(e.target) && menuOpen) {
       menuOpen = false;
       hamburguer.classList.remove('active');
-      
+
       gsap.to(navMenu, {
         right: '-100%',
         duration: 0.4,
