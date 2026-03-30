@@ -194,6 +194,10 @@ div.header {
     transition: 0.3s ease;
 }
 
+.header-dir .hamburguer:hover span:nth-child(1){
+width: 54px;
+}
+
 .header-dir .hamburguer span:nth-child(2) {
     width: 54px;
 }
